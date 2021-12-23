@@ -120,7 +120,7 @@ def main():
         username = str(input("Welcome!!! Please Enter Your Username: "))
         try:
             curs.execute(f'create database {username}')
-            main_2()
+            main()
         except:
             print("Username already taken! please enter different username.")
             main()
